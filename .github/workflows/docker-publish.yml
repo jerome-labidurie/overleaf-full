@@ -75,7 +75,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7,linux/arm/v8
+          platforms: linux/amd64
           outputs: type=image,name=target,annotation-index.org.opencontainers.image.description=kind of High Availability for Pi-hole DHCP/DNS services
           cache-from: type=gha
           cache-to: type=gha,mode=max
