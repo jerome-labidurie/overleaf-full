@@ -20,7 +20,7 @@ services:
       - /mnt/overleaf/data:/var/lib/overleaf
     labels:
       # if you use getwud https://github.com/getwud/wud
-      wud.tag.include: "^\\d+\\.\\d+\\.\\d+$$"
+      wud.tag.include: "^v\\d+\\.\\d+\\.\\d+$$"
     environment:
         OVERLEAF_APP_NAME: Overleaf Community Edition
         OVERLEAF_MONGO_URL: mongodb://mongo/sharelatex
