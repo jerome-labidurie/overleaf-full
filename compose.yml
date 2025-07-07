@@ -4,7 +4,7 @@
 services:
   web:
     restart: always
-    image: ...
+    image: ghcr.io/jerome-labidurie/overleaf-full:5.5.2
     depends_on:
       mongo:
         condition: service_healthy
